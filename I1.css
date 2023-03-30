@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header{
+    text-align: center;
+    background-color: burlywood;
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 35px;
+}
+.main{
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+#live_instruction_video{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    
+    background-color: brown;
+    padding: 350px;
+    border: dotted;
+    border-color:white;
+    
+}
+#Status_cointainer{
+    margin: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+    
+}
+
+#live_student_video{
+	background-color:rgb(236, 236, 91);
+	padding: 100px;
+    border: dotted;
+    border-color:black;
+    font-size: 24px;
+    text-align: center;
+   
+}
+
+#status{
+    background-color:rgb(236, 236, 91);
+	padding: 100px;
+	text-align: center;
+	font-size: 24px;
+    border: dotted;
+    border-color:black;
+}
+/* for mobiles */
+@media(max-width:767px){
+    #main{
+        grid-template-columns:1fr ;
+        grid-template-rows: auto auto 1fr;
+    }
+    #live_instruction_video{
+        padding: 100px;
+    }
+    #Status_cointainer{
+        margin: 10px;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+       }
+       #live_student_video , #status{
+        padding: 25px;
+        text-align: center;
+       }
+
+}
